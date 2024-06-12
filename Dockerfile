@@ -1,3 +1,3 @@
 FROM alpine:latest
-RUN sudo yum update -y && yum install dig -yum
+RUN sudo apk update -y && apk add bind-tools -y
 CMD ["dig","google.com"]
